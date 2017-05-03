@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_shadow">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:weightSum="1"
+        android:layout_marginTop="52dp"
+        android:layout_marginBottom="20dp">
+
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/confirmRequestTV"
+            android:textColor="@color/gray"
+            android:textSize="24sp"
+            android:textStyle="normal|bold"
+            android:text="الركاب في الرحلة "
+            android:layout_gravity="center"
+            android:layout_marginRight="10dp"
+            android:layout_weight="0.43" />
+
+        <ImageView
+            android:layout_width="47dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/people"
+            android:id="@+id/imageView5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="34dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#575757">
+        <TextView
+            android:text="الحالة"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:id="@+id/absentTV"
+            android:layout_weight="0.37" />
+        <TextView
+            android:text="رقم الجوال"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:id="@+id/phoneTV"
+            android:paddingRight="10dp"
+            android:layout_weight="0.37" />
+        <TextView
+            android:text="اسم الراكب"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:paddingTop="5dp"
+            android:id="@+id/nameTV"
+            android:layout_weight="0.37" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="253dp"
+            android:id="@+id/listPassengers"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+
+            android:layout_weight="1.95" />
+
+    </LinearLayout>
+
+</LinearLayout>

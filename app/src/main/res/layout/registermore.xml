@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_shadow"
+    android:id="@+id/fragmentFifth">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp">
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/darker_gray" >
+                <EditText
+                    android:gravity="right"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:hint="رقم رخصة القيادة"
+                    android:textColorHint="@android:color/darker_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:ems="7"
+                    android:id="@+id/driveNumET"
+                    android:textColorLink="?attr/colorButtonNormal"
+                    android:textColor="?attr/colorButtonNormal"
+                    android:layout_marginTop="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/darker_gray" >
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPersonName"
+                    android:ems="7"
+                    android:id="@+id/PlateNumET"
+                    android:textColorLink="?attr/colorButtonNormal"
+                    android:textColor="?attr/colorButtonNormal"
+                    android:gravity="right"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:hint="رقم اللوحة "
+                    android:textColorHint="@android:color/darker_gray"
+                    android:layout_marginTop="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/darker_gray">
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:ems="7"
+                    android:id="@+id/carCompanyET"
+                    android:textColorLink="?attr/colorButtonNormal"
+                    android:textColor="?attr/colorButtonNormal"
+                    android:gravity="right"
+                    android:background="@android:drawable/editbox_background_normal"
+                    android:hint="ماركة المركبة "
+                    android:textColorHint="@android:color/darker_gray"
+                    android:layout_marginTop="10dp"
+                    />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/darker_gray" >
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="7"
+                android:id="@+id/carModelET"
+                android:textColorLink="?attr/colorButtonNormal"
+                android:textColor="?attr/colorButtonNormal"
+                android:gravity="right"
+                android:background="@android:drawable/editbox_background_normal"
+                android:hint="طراز المركبة"
+                android:textColorHint="@android:color/darker_gray"
+                android:layout_marginTop="10dp" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+
+
+            <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/spinnerCarType"
+                android:scrollbarSize="@dimen/activity_horizontal_margin"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:entries="@array/carType"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_weight="0.14" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/darker_gray" >
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinnerCarColor"
+                    android:scrollbarSize="@dimen/activity_horizontal_margin"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:entries="@array/carColor"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:layout_weight="0.14" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@android:color/darker_gray">
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinnerYearOfManufacture"
+                    android:scrollbarSize="@dimen/activity_horizontal_margin"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:entries="@array/YearOfManufacture"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:layout_weight="0.14" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:id="@+id/spinnerCapacity"
+                    android:scrollbarSize="@dimen/activity_horizontal_margin"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="right"
+                    android:entries="@array/seat"
+                    android:background="@android:drawable/btn_dropdown"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:text="السعة"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/capacityTV"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <RadioGroup
+                    android:id="@+id/radios"
+                    android:layout_width="147dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:inputType="text"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/yesR"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:button="@null"
+                        android:drawablePadding="30dp"
+                        android:drawableRight="@android:drawable/btn_radio"
+                        android:text="نعم"
+                        android:onClick="onRadioButtonClicked"
+                        android:textColor="@color/gray"
+                        android:textSize="20dip"
+                        android:gravity="right"/>
+
+                    <RadioButton
+                        android:id="@+id/noR"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:button="@null"
+                        android:drawablePadding="30dp"
+                        android:drawableRight="@android:drawable/btn_radio"
+                        android:text="لا"
+                        android:textColor="@color/gray"
+                        android:onClick="onRadioButtonClicked"
+                        android:textSize="20dp"
+                        android:gravity="right"/>
+                </RadioGroup>
+
+                <TextView
+                    android:text="هل يوجد مرافق"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+
+
+            <Button
+                android:text="تسجيل"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/register"
+                android:background="@drawable/blue_button"
+                android:textSize="24sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="30dp"
+                android:layout_weight="1.73" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

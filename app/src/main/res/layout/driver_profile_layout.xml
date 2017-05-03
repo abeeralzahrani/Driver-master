@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_shadow"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0.10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp">
+
+                    <TextView
+                        android:text="اسم السائق : أحمد علي "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView21"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_weight="0.10"
+                        android:layout_marginLeft="10dp"
+                        android:paddingLeft="20dp"
+                        android:layout_marginTop="50dp"
+                        android:elevation="1dp" />
+
+                    <TextView
+                        android:text="الجوال :            05568938502 "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView22"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                    <TextView
+                        android:text="العمر :      42"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView27"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_weight="0.10" />
+
+
+                    <TextView
+                        android:text="الجنسية :  مصري"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textView25"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_weight="0.10" />
+
+                    <TextView
+                        android:text="اسم الشركة :  دبي للنقل"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/companyName"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_weight="0.10" />
+
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="171dp"
+            app:srcCompat="@drawable/profile_1x"
+            android:id="@+id/imageView4"
+            android:layout_gravity="right" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="181dp"
+        android:weightSum="1"
+        android:layout_marginTop="20dp"
+        android:layout_weight="0.48">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.89">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:text="السعر الشهري :    600"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/monthPrice"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.10" />
+
+
+
+                <TextView
+                    android:text="نوع المركبة : حافلة"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/carType"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.10" />
+
+                <TextView
+                    android:text="اسم شركة السيارة :    mercedes "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/carModel"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.10" />
+
+                <TextView
+                    android:text="رقم الموديل :    2013 "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/modelNum"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.10" />
+
+                <TextView
+                    android:text="رقم اللوحة :    AKB123 "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView32"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.10" />
+
+                <TextView
+                    android:text="اللون : أبيض"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView33"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.10" />
+
+                <TextView
+                    android:text="السعة :   20 "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView34"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.10" />
+
+                <TextView
+                    android:text="السعر اليومي :   70  "
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/textView30"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:text="وجود مرافق :  نعم "
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/textView26"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_weight="0.10" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <ImageView
+            android:layout_width="172dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/mercedes"
+            android:id="@+id/carImage"
+            android:layout_gravity="right"
+            android:paddingLeft="10dp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="87dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="التعليقات"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/commentTV"
+                android:gravity="right"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:layout_weight="0.89"
+                android:paddingTop="15dp"
+                android:paddingRight="30dp" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.89"
+                android:background="@color/grey_background"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+                    <TextView
+                        android:text="1:30 PM"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/TimeComment"
+                        android:layout_weight="1"
+                        android:textColor="@color/gray"
+                        android:gravity="right"
+                         />
+
+                    <TextView
+                        android:text="22\10\2016"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/DateComment"
+                        android:layout_weight="1"
+                        android:textColor="@color/gray"
+                        android:gravity="right"
+
+                         />
+
+                    <TextView
+                        android:text="الاسم : نورة"
+                        android:layout_width="250dp"                       android:layout_height="wrap_content"
+                        android:id="@+id/NameComment"
+                        android:layout_weight="1"
+                        android:textColor="@color/gray" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+                    <TextView
+                        android:text="السائق كان منضبظ جدا ويأتي على الوقت  "
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/comment1"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:layout_weight="1"
+                        />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

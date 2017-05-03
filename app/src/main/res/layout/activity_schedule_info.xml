@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_shadow"
+    android:weightSum="1">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp">
+
+
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|start"
+        android:gravity="right"
+        android:background="#575757"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:text="معلومات الرحلة   "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffff"
+
+            android:layout_gravity="right"
+            android:textSize="20sp"
+            android:layout_column="1"
+            android:id="@+id/DriverInfoTV"
+            android:layout_marginTop="10dp"
+            android:paddingTop="10dp"
+            />
+
+
+
+    </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp"
+            android:paddingRight="10dp">
+
+            <TextView
+                android:text=" "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/bookedSeatTV"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_weight="0.10"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:layout_marginRight="40dp"
+                android:layout_marginEnd="40dp"/>
+
+            <TextView
+                android:text="عدد الركاب المسجلين  "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/driveName"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                />
+
+
+
+        </TableRow>
+
+        <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:background="#FAFAFA"
+        android:paddingRight="10dp">
+
+            <TextView
+                android:text="عرض المسار اضغط هنا "
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/path"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+
+                android:clickable="true"
+                android:layout_weight="0.10"
+                android:gravity="right"
+                android:layout_marginRight="40dp"
+                android:layout_marginEnd="40dp"/>
+
+        <TextView
+            android:text="مسار الرحلة  "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/driveNum"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="right"
+            android:elevation="1dp" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:paddingRight="10dp">
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/monthPriceTV"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_weight="0.10"
+            android:gravity="right"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"/>
+        <TextView
+            android:text="السعر الشهري  "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/age"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="right"
+            android:elevation="1dp" />
+
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="10dp"
+        android:background="#FAFAFA"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:text=""
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/priceDayTV"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:layout_weight="0.10"
+            android:gravity="right"
+            android:layout_marginRight="40dp"
+            android:layout_marginEnd="40dp"/>
+        <TextView
+            android:text="السعر اليومي "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/nationality"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:gravity="right"
+            android:elevation="1dp" />
+
+    </TableRow>
+</TableLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Match"
+    android:id="@+id/fragmentFour"
+    android:background="@color/gray_shadow">
+
+
+    <TextView
+        android:text="@string/sendComplaint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/edit_texto"
+        android:layout_alignEnd="@+id/edit_texto"
+        android:layout_marginTop="92dp"
+        android:id="@+id/textView6"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/edit_texto"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:hint="@string/write_complaint"
+        android:inputType="text|textMultiLine"
+        android:gravity="top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="130dp"
+        android:background="@android:drawable/editbox_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:textColor="@color/black"/>
+
+
+
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+
+        android:scrollbarSize="@dimen/activity_horizontal_margin"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/spinner"
+        android:background="@android:drawable/btn_dropdown"
+        android:layout_below="@+id/edit_texto"
+        android:layout_alignLeft="@+id/send"
+        android:layout_alignStart="@+id/send"
+        android:layout_weight="0.14"
+        android:layout_alignRight="@+id/send"
+        android:layout_alignEnd="@+id/send"
+        android:gravity="center_vertical|end"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:text="@string/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:id="@+id/send"
+        android:background="@drawable/blue_button"
+        android:textSize="24sp"
+        android:layout_below="@+id/spinner"
+        android:layout_alignLeft="@+id/edit_texto"
+        android:layout_alignStart="@+id/edit_texto"
+        android:layout_alignRight="@+id/edit_texto"
+        android:layout_alignEnd="@+id/edit_texto" />
+
+
+</RelativeLayout>

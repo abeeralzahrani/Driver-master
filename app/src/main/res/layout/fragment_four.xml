@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_shadow">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="653dp"
+        android:layout_below="@+id/confirmRequestTV">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="52dp"
+                android:id="@+id/confirmRequestTV"
+                android:text="جدولي اليومي "
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="normal|bold"
+                android:gravity="center"
+                android:layout_marginBottom="20dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="33dp"
+                android:background="#575757"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:text="الركاب "
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:id="@+id/text1"
+                    android:gravity="center"
+                    android:layout_weight="0.13" />
+                <TextView
+                    android:text="مسار الرحلة"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:id="@+id/text2"
+                    android:layout_weight="0.19" />
+                <TextView
+                    android:text="وقت الرحلة "
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:id="@+id/text3"
+                    android:layout_weight="0.23" />
+                <TextView
+                    android:text="الرقم "
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:paddingRight="10dp"
+                    android:id="@+id/text4" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/list1"
+                android:layout_width="match_parent"
+                android:layout_height="388dp"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
